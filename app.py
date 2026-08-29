@@ -50,5 +50,6 @@ if st.button("Compute"):
     if student_name == "":
         st.warning("Enter name")
     else:
-        pass
+        score = calculate_performance(assignment, study_time, attendance)
+        results = get_results(score)
 
