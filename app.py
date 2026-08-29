@@ -50,5 +50,17 @@ if st.button("Compute"):
     if student_name == "":
         st.warning("Enter name")
     else:
-        pass
+
+        st.write(f"Results for {student_name}")
+        score = calculate_performance(assignment, study_time, attendance)
+        results = get_results(score)
+        st.metric(f"Scores",
+                  f"{score}")
+
+        if results == "PASS":
+            st.success(f"Great job 🎉 {student_name}")
+        else:
+            st.warning(f"Improve more ⚠️⚠️ {student_name}")
+
+        
 
