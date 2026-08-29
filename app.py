@@ -58,9 +58,9 @@ if st.button("Compute"):
                   f"{score}")
 
         if results == "PASS":
-            st.success("Great job")
+            st.success(f"Great job 🎉 {student_name}")
         else:
-            st.warning("Iprove more")
+            st.warning(f"Improve more ⚠️⚠️ {student_name}")
 
         
 
