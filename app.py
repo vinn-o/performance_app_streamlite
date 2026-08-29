@@ -8,5 +8,11 @@ st.set_page_config(
 
 with st.sidebar:
     st.header("Dashbard")
+    st.selectbox("Semester under review",
+                 (1, 2),
+                 index=None,
+                 placeholder="Semester")
     
+    
+
 
