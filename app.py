@@ -40,6 +40,9 @@ assignment = st.number_input("Enter assignment score",
 
 with st.sidebar:
     st.header("Dashbard")
+    st.image("jet_logo.jpeg",
+             width=90,
+             )
     st.selectbox("Semester under review",
                  (1, 2),
                  index=None,
