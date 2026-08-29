@@ -5,9 +5,24 @@ from calculator import calculate_performance, get_results
 student_name = st.text_input("Enter student name",
                              placeholder="full names")
 
-attendance= st.number_input("Attendance percentage")
+attendance= st.number_input("Attendance percentage",
+                            min_value=1,
+                            max_value=10,
+                            value=1
+                            )
 
-study_time = st.number_input("Study time per day")
+study_time = st.number_input("Study time per day",
+                              min_value=1,
+                              max_value=10,
+                              value=1
+                              )
+                
+
+assignment = st.number_input("Enter assignment score",
+                              min_value=1,
+                              max_value=100,
+                              value=1
+                              )
 
 st.set_page_config(
     page_title="Performance evaluator",
