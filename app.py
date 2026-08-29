@@ -2,17 +2,41 @@ import streamlit as st
 from calculator import calculate_performance, get_results
 
 
-student_name = st.text_input("Enter student name",
-                             placeholder="full names")
 
-attendance= st.number_input("Attendance percentage")
-
-study_time = st.number_input("Study time per day")
 
 st.set_page_config(
     page_title="Performance evaluator",
     page_icon = "📚",
 )
+
+
+
+st.title("Performance Calculator")
+
+
+student_name = st.text_input("Enter student name",
+                             placeholder="full names")
+
+attendance= st.number_input("Attendance percentage",
+                            min_value=1,
+                            max_value=10,
+                            value=1
+                            )
+
+study_time = st.number_input("Study time per day",
+                            min_value=1,
+                            max_value=10,
+                            value=1
+                            )
+                
+
+assignment = st.number_input("Enter assignment score",
+                            min_value=1,
+                            max_value=100,
+                            value=1
+                            )
+
+
 
 with st.sidebar:
     st.header("Dashbard")
@@ -22,5 +46,9 @@ with st.sidebar:
                  placeholder="Semester")
     
     
-st.title("Performance Calculator")
+if st.button("Compute"):
+    if student_name == "":
+        st.warning("Enter name")
+    else:
+        pass
 
