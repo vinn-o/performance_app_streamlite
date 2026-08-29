@@ -49,4 +49,6 @@ with st.sidebar:
 if st.button("Compute"):
     if student_name == "":
         st.warning("Enter name")
+    else:
+        pass
 
