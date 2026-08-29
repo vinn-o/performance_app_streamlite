@@ -54,7 +54,13 @@ if st.button("Compute"):
         st.write(f"Results for {student_name}")
         score = calculate_performance(assignment, study_time, attendance)
         results = get_results(score)
-        st.metric(f"Scores {results}")
+        st.metric(f"Scores",
+                  f"{score}")
+
+        if results == "PASS":
+            st.success("Great job")
+        else:
+            st.warning("Iprove more")
 
         
 
