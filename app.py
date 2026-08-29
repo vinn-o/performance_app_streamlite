@@ -46,5 +46,7 @@ with st.sidebar:
                  placeholder="Semester")
     
     
-button = st.button("Compute")
+if st.button("Compute"):
+    if student_name == "":
+        st.warning("Enter name")
 
