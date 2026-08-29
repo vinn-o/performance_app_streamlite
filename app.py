@@ -46,5 +46,5 @@ with st.sidebar:
                  placeholder="Semester")
     
     
-
+button = st.button("Compute")
 
