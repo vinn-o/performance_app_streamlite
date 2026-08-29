@@ -12,4 +12,11 @@ def get_results(score):
         return "PASS"
     else:
         return "IMPROVE"
-    
+
+
+def main():
+
+    pass
+
+if __name__ == "__main__":
+    main()
