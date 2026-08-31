@@ -12,7 +12,7 @@ st.set_page_config(
 
 
 st.title("Performance Calculator")
-
+st.divider()
 
 student_name = st.text_input("Enter student name",
                              placeholder="full names")
