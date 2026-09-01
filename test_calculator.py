@@ -8,5 +8,5 @@ def test_pass_get_results():
    assert results == "PASS"
 
 def test_fail_get_results():
-   results = get_results(49)
+   results = get_results(23)
    assert results == "IMPROVE"
